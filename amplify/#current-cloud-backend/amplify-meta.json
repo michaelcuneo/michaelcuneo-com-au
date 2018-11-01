@@ -1,0 +1,36 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "michaelcuneo-20181004144401-authRole",
+			"UnauthRoleArn": "arn:aws:iam::481588845003:role/michaelcuneo-20181004144401-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::481588845003:role/michaelcuneo-20181004144401-authRole",
+			"Region": "ap-southeast-2",
+			"DeploymentBucketName": "michaelcuneo-20181004144401-deployment",
+			"UnauthRoleName": "michaelcuneo-20181004144401-unauthRole",
+			"StackName": "michaelcuneo-20181004144401",
+			"StackId": "arn:aws:cloudformation:ap-southeast-2:481588845003:stack/michaelcuneo-20181004144401/1d5751c0-c790-11e8-af4c-50fae94face6"
+		}
+	},
+	"auth": {},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/michaelcuneo-20181004144401-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2018-10-04T05:11:47.112Z",
+			"output": {
+				"CloudFrontSecureURL": "https://d2fv3v1jpxto82.cloudfront.net",
+				"S3BucketSecureURL": "https://michaelcuneo-hosting.s3.amazonaws.com",
+				"WebsiteURL": "http://michaelcuneo-hosting.s3-website-ap-southeast-2.amazonaws.com",
+				"CloudFrontDistributionID": "E4JVUVG3FHODF",
+				"Region": "ap-southeast-2",
+				"HostingBucketName": "michaelcuneo-hosting",
+				"CloudFrontDomainName": "d2fv3v1jpxto82.cloudfront.net"
+			},
+			"lastPushDirHash": "BxhBJ1YClVOFXm9VECcyKZ66744="
+		}
+	}
+}
