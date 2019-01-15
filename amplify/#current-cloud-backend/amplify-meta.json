@@ -1,36 +1,35 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "michaelcuneo-20181004144401-authRole",
-      "UnauthRoleArn": "arn:aws:iam::481588845003:role/michaelcuneo-20181004144401-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::481588845003:role/michaelcuneo-20181004144401-authRole",
+      "AuthRoleName": "michaelcuneo-com-au-20190115211108-authRole",
+      "UnauthRoleArn": "arn:aws:iam::481588845003:role/michaelcuneo-com-au-20190115211108-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::481588845003:role/michaelcuneo-com-au-20190115211108-authRole",
       "Region": "ap-southeast-2",
-      "DeploymentBucketName": "michaelcuneo-20181004144401-deployment",
-      "UnauthRoleName": "michaelcuneo-20181004144401-unauthRole",
-      "StackName": "michaelcuneo-20181004144401",
-      "StackId": "arn:aws:cloudformation:ap-southeast-2:481588845003:stack/michaelcuneo-20181004144401/1d5751c0-c790-11e8-af4c-50fae94face6"
+      "DeploymentBucketName": "michaelcuneo-com-au-20190115211108-deployment",
+      "UnauthRoleName": "michaelcuneo-com-au-20190115211108-unauthRole",
+      "StackName": "michaelcuneo-com-au-20190115211108",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:481588845003:stack/michaelcuneo-com-au-20190115211108/e09e2460-18ad-11e9-9e8a-0230e8e86e24"
     }
   },
-  "auth": {},
-  "hosting": {
-    "S3AndCloudFront": {
-      "service": "S3AndCloudFront",
+  "auth": {
+    "michaelcuneo": {
+      "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/michaelcuneo-20181004144401-deployment/amplify-cfn-templates/hosting/template.json",
-        "logicalId": "hostingS3AndCloudFront"
+        "s3TemplateURL": "https://s3.amazonaws.com/michaelcuneo-com-au-20190115211108-deployment/amplify-cfn-templates/auth/michaelcuneo-cloudformation-template.yml",
+        "logicalId": "authmichaelcuneo"
       },
-      "lastPushTimeStamp": "2019-01-15T06:34:17.294Z",
+      "lastPushTimeStamp": "2019-01-15T10:17:12.845Z",
       "output": {
-        "CloudFrontSecureURL": "https://d2fv3v1jpxto82.cloudfront.net",
-        "S3BucketSecureURL": "https://michaelcuneo-hosting.s3.amazonaws.com",
-        "WebsiteURL": "http://michaelcuneo-hosting.s3-website-ap-southeast-2.amazonaws.com",
-        "CloudFrontDistributionID": "E4JVUVG3FHODF",
-        "Region": "ap-southeast-2",
-        "HostingBucketName": "michaelcuneo-hosting",
-        "CloudFrontDomainName": "d2fv3v1jpxto82.cloudfront.net"
+        "AppClientSecret": "1houl19b1k2r5je20m55vfvd1arnbqk1g0kqq2qh5vc4mt6ftdos",
+        "UserPoolId": "ap-southeast-2_Lg35f5pYN",
+        "AppClientIDWeb": "1qnho2kdgnhluhkrqeck8bk00k",
+        "AppClientID": "5g3ga2pjptmd4rmlrj8408i5ke",
+        "IdentityPoolId": "ap-southeast-2:db981dca-b151-445c-8dbe-b263deb9cdf4",
+        "IdentityPoolName": "michaelcuneo_identitypool__mcwebsite",
+        "UserPoolName": "michaelcuneo_userpool"
       },
-      "lastPushDirHash": "23Ng2Hxya8nYElws2U29aTvR39g="
+      "lastPushDirHash": "yXpiSDnYaB7AZDucsQIzReSGQA8="
     }
   }
 }

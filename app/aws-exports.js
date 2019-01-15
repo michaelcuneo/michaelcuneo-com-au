@@ -2,9 +2,10 @@
 
 const awsmobile =  {
     "aws_project_region": "ap-southeast-2",
-    "aws_content_delivery_bucket": "michaelcuneo-hosting",
-    "aws_content_delivery_bucket_region": "ap-southeast-2",
-    "aws_content_delivery_url": "https://d2fv3v1jpxto82.cloudfront.net"
+    "aws_cognito_identity_pool_id": "ap-southeast-2:db981dca-b151-445c-8dbe-b263deb9cdf4",
+    "aws_cognito_region": "ap-southeast-2",
+    "aws_user_pools_id": "ap-southeast-2_Lg35f5pYN",
+    "aws_user_pools_web_client_id": "1qnho2kdgnhluhkrqeck8bk00k"
 };
 
 

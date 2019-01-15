@@ -1,14 +1,23 @@
 import styled from 'styled-components';
 
-const Content = styled.div`
-  padding: 0em;
-  margin: 0em;
-  max-width: 100vw;
-  width: 100vw;
-  min-height: 100vh;
-  height: 100vh;
+import innerHeight from 'ios-inner-height';
+
+export const MobileContent = styled.div`
+  min-width: 100vw;
+  min-height: ${innerHeight()}px;
+  margin: 0 auto;
+  display: flex;
   flex-direction: column;
-  overflow: scroll;
+  background: rgba(255, 255, 255, 0);
+  z-index: 0;
 `;
 
-export default Content;
+export const DesktopContent = styled.div`
+  min-width: 100vw;
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0);
+  z-index: 0;
+`;

@@ -24,6 +24,7 @@ import App from 'containers/App';
 
 // Import Language Provider
 import LanguageProvider from 'containers/LanguageProvider';
+import AuthManager from 'containers/AuthManager';
 
 // Load the favicon and the .htaccess file
 import '!file-loader?name=[name].[ext]!./images/favicon.ico';
@@ -35,7 +36,6 @@ import configureStore from './configureStore';
 import { translationMessages } from './i18n';
 
 import awsExports from './aws-exports';
-
 Amplify.configure(awsExports);
 
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
@@ -63,13 +63,17 @@ const render = messages => {
     <Provider store={store}>
       <LanguageProvider messages={messages}>
         <ConnectedRouter history={history}>
-          <App />
+          <AuthManager>
+            <App />
+          </AuthManager>
         </ConnectedRouter>
       </LanguageProvider>
     </Provider>,
     MOUNT_NODE,
   );
 };
+
+window.LOG_LEVEL = 'DEBUG';
 
 if (module.hot) {
   // Hot reloadable React components and translation json files

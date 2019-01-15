@@ -1,0 +1,19 @@
+{
+  "mcwebsite": {
+    "awscloudformation": {
+      "AuthRoleName": "michaelcuneo-com-au-20190115211108-authRole",
+      "UnauthRoleArn": "arn:aws:iam::481588845003:role/michaelcuneo-com-au-20190115211108-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::481588845003:role/michaelcuneo-com-au-20190115211108-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "michaelcuneo-com-au-20190115211108-deployment",
+      "UnauthRoleName": "michaelcuneo-com-au-20190115211108-unauthRole",
+      "StackName": "michaelcuneo-com-au-20190115211108",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:481588845003:stack/michaelcuneo-com-au-20190115211108/e09e2460-18ad-11e9-9e8a-0230e8e86e24"
+    },
+    "categories": {
+      "auth": {
+        "michaelcuneo": {}
+      }
+    }
+  }
+}

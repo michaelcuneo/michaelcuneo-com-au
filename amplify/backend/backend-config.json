@@ -1,0 +1,8 @@
+{
+  "auth": {
+    "michaelcuneo": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}
