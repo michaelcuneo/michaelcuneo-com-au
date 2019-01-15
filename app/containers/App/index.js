@@ -22,6 +22,8 @@ import Footer from 'components/Footer';
 import Content from './Content';
 import AppWrapper from './AppWrapper';
 
+import GlobalStyle from '../../global-styles';
+
 export default function App() {
   return (
     <AppWrapper>
@@ -43,6 +45,7 @@ export default function App() {
         </Switch>
       </Content>
       <Footer />
+      <GlobalStyle />
     </AppWrapper>
   );
 }

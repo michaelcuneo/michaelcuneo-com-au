@@ -82,7 +82,10 @@
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
 				"TemplateURL": "https://s3.amazonaws.com/michaelcuneo-20181004144401-deployment/amplify-cfn-templates/hosting/template.json",
-				"Parameters": {}
+				"Parameters": {
+					"bucketName": "michaelcuneo-hosting",
+					"env": "NONE"
+				}
 			}
 		}
 	},

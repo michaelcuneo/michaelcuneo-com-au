@@ -1,20 +1,15 @@
 {
-    "projectName": "michaelcuneo",
-    "projectPath": "/home/michael/michaelcuneo",
-    "defaultEditor": "code",
-    "frontendHandler": {
-        "javascript": "/home/michael/.nvm/versions/node/v8.11.1/lib/node_modules/@aws-amplify/cli/node_modules/amplify-frontend-javascript"
-    },
-    "javascript": {
-        "framework": "react",
-        "config": {
-            "SourceDir": "app",
-            "DistributionDir": "build",
-            "BuildCommand": "npm run build",
-            "StartCommand": "npm run start"
-        }
-    },
-    "providers": {
-        "awscloudformation": "/home/michael/.nvm/versions/node/v8.11.1/lib/node_modules/@aws-amplify/cli/node_modules/amplify-provider-awscloudformation"
+  "projectName": "michaelcuneo",
+  "javascript": {
+    "framework": "react",
+    "config": {
+      "SourceDir": "app",
+      "DistributionDir": "build",
+      "BuildCommand": "npm run build",
+      "StartCommand": "npm run start"
     }
+  },
+  "providers": ["awscloudformation"],
+  "frontend": "javascript",
+  "version": "1.0"
 }

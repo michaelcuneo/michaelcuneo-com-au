@@ -1,7 +1,6 @@
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-/* eslint no-unused-expressions: 0 */
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   html,
   body {
     height: 100vh;
@@ -30,9 +29,11 @@ injectGlobal`
     font-family: 'Garamond', serif;
     line-height: 1.5em;
   }
-  
+
   p,
   label.faunaLoaded {
     font-family: 'Fauna One', serif;
   }
 `;
+
+export default GlobalStyle;
